@@ -8,6 +8,7 @@ public class Circulo : MonoBehaviour
     private Animator anim;
 
     public CanvasManager canvasManager;
+    public Text mensajeText;
 
     void Start()
     {
@@ -22,12 +23,12 @@ public class Circulo : MonoBehaviour
             if (cubo.Nombre == "Cubito")
             {
                 cubo.Nombre = "Circulo";
-                Debug.Log("¡Hola, ahora sos un " + cubo.Nombre + "!");
+                mensajeText.text = "¡Hola, ahora sos un " + cubo.Nombre + "!";
                 anim.SetBool("AnimacionSaludo", true);
             }
             else
             {
-                Debug.Log("¡Hola! ya sos un " + cubo.Nombre + " diferente.");
+                mensajeText.text = "¡Hola! ya sos un " + cubo.Nombre + " diferente.";
                 anim.SetBool("AnimacionSaludo", true);
             }
         }

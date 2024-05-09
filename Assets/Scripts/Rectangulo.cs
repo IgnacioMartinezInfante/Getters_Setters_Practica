@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Rectangulo : MonoBehaviour
 {
     private Animator anim;
 
     public CanvasManager canvasManager;
+    public Text mensajeText;
 
     void Start()
     {
@@ -18,7 +20,7 @@ public class Rectangulo : MonoBehaviour
         if (collision.gameObject.GetComponent<Cubo>() != null)
         {
             Cubo cubo = collision.gameObject.GetComponent<Cubo>();
-            Debug.Log("¡Hola, " + cubo.Nombre + "!");
+            mensajeText.text = "¡Hola, " + cubo.Nombre + "!";
             anim.SetBool("AnimacionAgrandarse", true);
         }
     }

@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasManager: {fileID: 1120283708}
+  mensajeText: {fileID: 1120283709}
 --- !u!212 &285170717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -425,6 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasManager: {fileID: 1120283708}
+  mensajeText: {fileID: 1120283709}
 --- !u!212 &427998690
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -813,6 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e36111150937d254d8bd8013eeaff755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mensajeText: {fileID: 1120283709}
 --- !u!114 &1120283709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,12 +838,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 4
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1015,6 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 4
+  mensajeText: {fileID: 1120283709}
 --- !u!212 &1964534080
 SpriteRenderer:
   m_ObjectHideFlags: 0

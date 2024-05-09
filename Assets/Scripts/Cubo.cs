@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cubo : MonoBehaviour
 {
     public float velocidad;
     private string nombre = "Cubito";
+    public Text mensajeText;
 
     public string Nombre
     {
@@ -18,7 +20,7 @@ public class Cubo : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("El nombre no puede ser nulo ni una cadena vacía.");
+                mensajeText.text = "El nombre no puede ser nulo ni una cadena vacía.";
             }
         }
     }
